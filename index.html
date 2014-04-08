@@ -24,9 +24,45 @@
 
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
+    <style type="text/css">
+    	.blink_me {
+		    -webkit-animation-name: blinker;
+		    -webkit-animation-duration: 1s;
+		    -webkit-animation-timing-function: linear;
+		    -webkit-animation-iteration-count: infinite;
+		    
+		    -moz-animation-name: blinker;
+		    -moz-animation-duration: 1s;
+		    -moz-animation-timing-function: linear;
+		    -moz-animation-iteration-count: infinite;
+		    
+		    animation-name: blinker;
+		    animation-duration: 1s;
+		    animation-timing-function: linear;
+		    animation-iteration-count: infinite;
+		}
+
+		@-moz-keyframes blinker {  
+		    0% { opacity: 1.0; }
+		    50% { opacity: 0.0; }
+		    100% { opacity: 1.0; }
+		}
+
+		@-webkit-keyframes blinker {  
+		    0% { opacity: 1.0; }
+		    50% { opacity: 0.0; }
+		    100% { opacity: 1.0; }
+		}
+
+		@keyframes blinker {  
+		    0% { opacity: 1.0; }
+		    50% { opacity: 0.0; }
+		    100% { opacity: 1.0; }
+		}
+    </style>
   </head>
 
-  <body>
+  <body style="font-family:courier new;">
     <div class="navbar-wrapper">
       <div class="container">
 
@@ -39,25 +75,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Project name</a>
+              <a class="navbar-brand" href="#">The GitHub Page of Warisman</a>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
+                <li><a href="#"><span style='font-size:20px;'>><span class="blink_me">_</span></span>Home>>3 Things I like</a></li>
+                <li><a href="#"><span style='font-size:20px;'>><span class="blink_me">_</span></span>About</a></li>
               </ul>
             </div>
           </div>
@@ -79,27 +102,27 @@
         <div class="item active">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <h1>"Ngoding"</h1>
+              <p>The thing is,<code>Ngoding</code> is a slang for <b>writing tons of line of a program's code</b>.</p>
+              <p>When i open my laptop, then i imagine something great. I'll try put it into a scheme, doing some algorithm, then <code>Ngoding</code>. Code (for me) is something to make what inside my head into reality. Convert an idea into lines of code, it is just a way (for me) to become what they called "Mother (for me: Father) of Creation"</p>
+              <p><a class="btn btn-lg btn-primary" href="http://www.w3schools.com/" role="button" target="_blank">Especially, Web Programming</a></p>
             </div>
           </div>
         </div>
         <div class="item">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              <h1>Eat.</h1>
+              <p style="margin-top:100px;">U no <code>eat</code>???</p>
+              <p><a class="btn btn-lg btn-primary" href="http://en.wikipedia.org/wiki/Eat" role="button" target="_blank">Learn more about <code>eat</code></a></p>
             </div>
           </div>
         </div>
         <div class="item">
           <div class="container">
             <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+              <h1>Slap, I mean Sleep.</h1>
+              <iframe width="100%" height="90%" src="//www.youtube.com/embed/nNhDkKAvxFk" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -110,8 +133,8 @@
 
 
       <!-- FOOTER -->
-      <footer>
-        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      <footer style="padding-right:10px;text-align:right;">
+        <p>&copy; 2014 <a href="http://about.me/warisman" target="_blank">Warisman Syam</a>, &middot; Find Me at <a href="http://fb.com/imam.co.uk" target="_blank">Facebook</a></p>
       </footer>
 
     </div><!-- /.container -->
